@@ -3,8 +3,11 @@ import re
 import openai
 import streamlit as st
 
-# Set up OpenAI API key
-openai.api_key = st.secrets("OPENAI_API_KEY")
+# Access the OpenAI API key from the secrets.toml file
+openai_api_key = st.secrets["OPENAI_API_KEY"]
+
+# Set the API key for OpenAI
+openai.api_key = openai_api_key
 
 #def 1
 def summarize_key_problems(msg):
