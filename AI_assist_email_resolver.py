@@ -102,23 +102,17 @@ def generate_customized_email(msg, selected_department):
     I would like to bring to your attention a customer inquiry that requires your assistance. Here are the details:
 
     Customer Information:
-    - Name: {customer_info['name']}
-    - Email: {customer_info['email']}
-    - Phone: {customer_info['phone']}
-    - Address: {customer_info['address']}
     
     Customer's Issues:
-    {msg}
 
     Recommended Solutions:
-    {recommended_solutions}
+
+    Timelines and Updates:
 
     Please review this information and take appropriate action to address the customer's concerns.
 
     Best regards,
-    Your Name
-    Your Title
-    Your Company
+    Customer Service Team
     """
 
     response3 = openai.ChatCompletion.create(
