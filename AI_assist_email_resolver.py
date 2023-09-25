@@ -26,7 +26,7 @@ def summarize_key_problems(msg):
         messages=[
             {
                 "role": "system",
-                "content": "You are an assistant that helps with customer support inquiries. List the key problems"
+                "content": "You are an assistant that helps with customer support inquiries. List the key problems only"
             },
             {
                 "role": "user",
@@ -42,7 +42,7 @@ def summarize_key_problems(msg):
             }
         ],
         max_tokens=1000,
-        temperature=0.6
+        temperature=0.2
     )
 
     return response1.choices[0].message['content']
@@ -64,7 +64,7 @@ def identify_relevant_departments(msg):
         messages=[
             {
                 "role": "system",
-                "content": "You are an assistant that helps with customer support inquiries. List relevant departments."
+                "content": "You are an assistant that helps with customer support inquiries. List relevant departments only."
             },
             {
                 "role": "user",
@@ -80,7 +80,7 @@ def identify_relevant_departments(msg):
             }
         ],
         max_tokens=1000,
-        temperature=0.6
+        temperature=0.2
     )
 
     return response2.choices[0].message['content']
