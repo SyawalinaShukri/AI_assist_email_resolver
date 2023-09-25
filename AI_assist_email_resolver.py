@@ -88,7 +88,7 @@ def identify_relevant_departments(msg):
 
 #def3
 
-def generate_customized_email(msg, selected_department, customer_info, recommended_solutions):
+def generate_customized_email(msg, selected_department):
     instructions3 = """
     "Please analyze the email that has been sent to the customer service team and generate a customized email in text containing the identified customer's issues and recommended solutions, ready to be sent to the selected department."
     """
