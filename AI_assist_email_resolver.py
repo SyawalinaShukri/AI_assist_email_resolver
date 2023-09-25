@@ -94,7 +94,7 @@ def generate_customized_email(msg, selected_department):
     """
 
     example_output3 = """
-    Customized Email about the customer issue or request to Selected Department: [Customized email content]
+    Customized Email to Selected Department: [Customized email content]
     """
     response3 = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
