@@ -88,14 +88,39 @@ def identify_relevant_departments(msg):
 
 #def3
 
-def generate_customized_email(msg, selected_department):
+def generate_customized_email(msg, selected_department, customer_info, recommended_solutions):
     instructions3 = """
     "Please analyze the email that has been sent to the customer service team and generate a customized email in text containing the identified customer's issues and recommended solutions, ready to be sent to the selected department."
     """
 
-    example_output3 = """
-    Customized Email to Selected Department: [Customized email content]
+    # Create a template for the customized email
+    email_template = f"""
+    Customized Email to {selected_department}:
+    
+    Dear {selected_department} Team,
+
+    I would like to bring to your attention a customer inquiry that requires your assistance. Here are the details:
+
+    Customer Information:
+    - Name: {customer_info['name']}
+    - Email: {customer_info['email']}
+    - Phone: {customer_info['phone']}
+    - Address: {customer_info['address']}
+    
+    Customer's Issues:
+    {msg}
+
+    Recommended Solutions:
+    {recommended_solutions}
+
+    Please review this information and take appropriate action to address the customer's concerns.
+
+    Best regards,
+    Your Name
+    Your Title
+    Your Company
     """
+
     response3 = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
@@ -109,11 +134,7 @@ def generate_customized_email(msg, selected_department):
             },
             {
                 "role": "assistant",
-                "content": example_output3
-            },
-            {
-                "role": "user",
-                "content": msg
+                "content": email_template
             }
         ],
         max_tokens=1000,
