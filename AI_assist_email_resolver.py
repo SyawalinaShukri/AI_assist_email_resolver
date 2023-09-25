@@ -90,7 +90,7 @@ def identify_relevant_departments(msg):
 
 def generate_customized_email(msg, selected_department):
     instructions3 = """
-    "Please analyze the email that has been sent to the customer service team and generate a customized email in text containing the identified issues and recommended solutions for each department, ready to be sent to the selected department."
+    "Please analyze the email that has been sent to the customer service team and generate a customized email in text containing the identified customer's issues and recommended solutions, ready to be sent to the selected department."
     """
 
     example_output3 = """
@@ -101,7 +101,7 @@ def generate_customized_email(msg, selected_department):
         messages=[
             {
                 "role": "system",
-                "content": "You are an assistant that helps with customer support inquiries. Please provide a customized email based on th selected_department"
+                "content": "You are an assistant that helps with customer support inquiries. Please provide a customized email to the selected_department"
             },
             {
                 "role": "user",
@@ -168,6 +168,10 @@ def extract_departments(text):
     
     # Use re.findall to extract department names
     department_names = re.findall(pattern, text, re.MULTILINE)
+    
+    # Exclude the first line if it exists
+    if department_names:
+        department_names = department_names[1:]
     
     return department_names
 
