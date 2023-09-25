@@ -12,7 +12,7 @@ openai.api_key = openai_api_key
 #def 1
 def summarize_key_problems(msg):
     instructions = """
-    "Provide a concise three-point summary of the key problems."
+    "Highlight key problems in a concise three-point summary."
     """
 
     example_output="""
@@ -245,7 +245,7 @@ if selected_department != "Client":
     if st.sidebar.button("Generate Email"):
         if selected_department in st.session_state.departments:
             customized_email = generate_customized_email(customer_email,selected_department)
-            st.header("Customized Email for {} Dept:".format(selected_department))
+            st.header("Customized Email for {} :".format(selected_department))
             st.write(customized_email)
         else:
             st.warning("Invalid department selection.")
