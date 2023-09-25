@@ -26,7 +26,7 @@ def summarize_key_problems(msg):
         messages=[
             {
                 "role": "system",
-                "content": "You are an assistant that helps with customer support inquiries. List the key problems only"
+                "content": "You are an assistant that helps analyze the email's content. List the key problems."
             },
             {
                 "role": "user",
@@ -64,7 +64,7 @@ def identify_relevant_departments(msg):
         messages=[
             {
                 "role": "system",
-                "content": "You are an assistant that helps with customer support inquiries. List relevant departments only."
+                "content": "You are an assistant that helps analyze the email's content. List relevant departments."
             },
             {
                 "role": "user",
