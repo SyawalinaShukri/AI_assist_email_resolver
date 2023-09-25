@@ -64,7 +64,7 @@ def identify_relevant_departments(msg):
         messages=[
             {
                 "role": "system",
-                "content": "You are an assistant that helps analyze the email's content. List relevant departments."
+                "content": "You are an assistant that helps analyze the email's content. List relevant department[s]."
             },
             {
                 "role": "user",
