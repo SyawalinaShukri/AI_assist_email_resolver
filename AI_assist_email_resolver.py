@@ -245,7 +245,7 @@ if selected_department != "Client":
     if st.sidebar.button("Generate Email"):
         if selected_department in st.session_state.departments:
             customized_email = generate_customized_email(customer_email,selected_department)
-            st.header(f"Customized Email for {selected_department} Team:")
+            st.header("Customized Email: {} ".format(selected_department))
             st.write(customized_email)
         else:
             st.warning("Invalid department selection.")
