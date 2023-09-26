@@ -33,7 +33,7 @@
 
 * [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 * [![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-Latest-blue)](https://code.visualstudio.com/)
-* [![Streamlit](https://img.shields.io/badge/OpenAI-Latest-blue)](https://streamlit.io/)
+* [![OpenAI](https://img.shields.io/badge/OpenAI-GPT-3.5.-turbo-blue)](https://openai.com/)
 * [![Streamlit](https://img.shields.io/badge/Streamlit-Latest-blue)](https://streamlit.io/)
 
 
