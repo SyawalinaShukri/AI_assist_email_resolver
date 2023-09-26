@@ -12,15 +12,14 @@
   
 * Streamlit for deployment
   
-* Functionality-
- * User Inputs:
-  * The user needs to input the client’s email or text issue
-
- * Outputs:
-  * The tool will highlight key problems in a concise three-point summary. 
-  * The tool will highlight the relevant department responsible for handling the inquiry.
-  * The tool will generate a customized email in text containing the identified issues and recommended solutions, ready to be sent to the appropriate department. 
-  * Optional: The tool can also generate a personalized email for the client to acknowledge their concerns and assure them that the issues are being addressed, while allowing the team some time to resolve them      satisfactorily.
+* Functionality:
+    * User Inputs
+       * The user needs to input the client’s email or text issue
+    * Outputs
+       * The tool will highlight key problems in a concise three-point summary. 
+       * The tool will highlight the relevant department responsible for handling the inquiry.
+       * The tool will generate a customized email in text containing the identified issues and recommended solutions, ready to be sent to the appropriate department. 
+       * Optional: The tool can also generate a personalized email for the client to acknowledge their concerns and assure them that the issues are being addressed, while allowing the team some time to resolve them      satisfactorily.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
