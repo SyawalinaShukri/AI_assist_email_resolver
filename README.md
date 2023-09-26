@@ -7,15 +7,18 @@
 
 
 * GPT Project
-  
-* Text analyzer with OpenAI model: GPT-3.5-turbo
-  
-* Streamlit for deployment
-  
-* Functionality:
-    * User Inputs
+   * A generative AI application designed to streamline the resolution of client issues for businesses.
+     
+* Text analyzer with OpenAI model -
+    * GPT-3.5-turbo
+
+* Deployment -
+    * Streamlit
+
+* Functionality-
+    * User Input:
        * The user needs to input the client’s email or text issue
-    * Outputs
+    * Outputs:
        * The tool will highlight key problems in a concise three-point summary. 
        * The tool will highlight the relevant department responsible for handling the inquiry.
        * The tool will generate a customized email in text containing the identified issues and recommended solutions, ready to be sent to the appropriate department. 
@@ -35,7 +38,6 @@
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- CONTACT -->
