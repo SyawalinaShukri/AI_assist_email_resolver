@@ -33,7 +33,7 @@
 
 * [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 * [![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-Latest-blue)](https://code.visualstudio.com/)
-* [![OpenAI GPT-3.5 Turbo](https://img.shields.io/badge/OpenAI%20GPT%2D3.5%20Turbo-Latest-blue)](https://openai.com/)
+* <a href="https://openai.com/" style="background-color: blue; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none;">OpenAI GPT-3.5 Turbo</a>
 * [![Streamlit](https://img.shields.io/badge/Streamlit-Latest-blue)](https://streamlit.io/)
 
 
