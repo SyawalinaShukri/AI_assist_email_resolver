@@ -47,6 +47,8 @@ Syawalina
 
 Project Link: [https://github.com/SyawalinaShukri/AI_assist_email_resolver](https://github.com/SyawalinaShukri/AI_assist_email_resolver)
 
+Portfolio: [https://gamma.app/public/SyawalinaShukri-bdxe64b6iizhbxa](https://gamma.app/public/SyawalinaShukri-bdxe64b6iizhbxa)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
