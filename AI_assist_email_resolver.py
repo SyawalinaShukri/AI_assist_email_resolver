@@ -9,7 +9,7 @@ openai_api_key = st.secrets["OPENAI_API_KEY"]
 # Set the API key for OpenAI
 openai.api_key = openai_api_key
 
-MAX_TOKENS = 50
+MAX_TOKENS = 1000
 
 #def 1
 def summarize_key_problems(msg):
