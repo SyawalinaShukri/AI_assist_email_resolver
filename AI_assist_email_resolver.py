@@ -9,6 +9,8 @@ openai_api_key = st.secrets["OPENAI_API_KEY"]
 # Set the API key for OpenAI
 openai.api_key = openai_api_key
 
+MAX_TOKENS = 50
+
 #def 1
 def summarize_key_problems(msg):
     instructions = """
@@ -41,7 +43,7 @@ def summarize_key_problems(msg):
                 "content": msg
             }
         ],
-        max_tokens=1000,
+        max_tokens=MAX_TOKENS,
         temperature=0.2
     )
 
@@ -79,7 +81,7 @@ def identify_relevant_departments(msg):
                 "content": msg
             }
         ],
-        max_tokens=1000,
+        max_tokens=MAX_TOKENS,
         temperature=0.2
     )
 
@@ -131,7 +133,7 @@ def generate_customized_email(msg, selected_department):
                 "content": email_template
             }
         ],
-        max_tokens=1000,
+        max_tokens=MAX_TOKENS,
         temperature=0.6
     )
 
@@ -168,7 +170,7 @@ def generate_personalized_email(msg):
                 "content": msg
             }
         ],
-        max_tokens=1000,
+        max_tokens=MAX_TOKENS,
         temperature=0.6
     )
 
