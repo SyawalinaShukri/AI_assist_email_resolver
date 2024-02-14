@@ -222,8 +222,12 @@ if 'departments' not in st.session_state:
 
 # Step 2: Generate problems and departments using def1 and def2
 if st.sidebar.button("Analyze email"):
-    st.session_state.problems = summarize_key_problems(customer_email)
-    st.session_state.departments = identify_relevant_departments(customer_email)
+    # Check if the input is empty or contains only whitespace
+    if not customer_email.strip():
+        st.warning("Please enter valid text.")
+    else:
+        st.session_state.problems = summarize_key_problems(customer_email)
+        st.session_state.departments = identify_relevant_departments(customer_email)
 
 if st.session_state.problems:
     st.header("Key Problems:")
